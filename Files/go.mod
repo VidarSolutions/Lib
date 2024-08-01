@@ -1,3 +1,3 @@
-module github.com/VidarSolutions/Files
+module github.com/VidarSolutions/Lib/Files
 
 go 1.22.1
