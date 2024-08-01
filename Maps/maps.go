@@ -25,13 +25,15 @@ type Map struct {
 	Data map[string]MapData
 }
 
-func (mData MapData) NewMap(key string) *Map {
+func (mData MapData) NewMap(key string) Map {
 	m := NewMap()
 	m.Set(key, mData)
 	return m
 }
-func NewMap() *Map {
-	return make(map[string]MapData)
+func NewMap() Map {
+	var mMap Map
+
+	return mMap
 }
 
 func NewMD() MapData {
@@ -44,7 +46,7 @@ func NewMD() MapData {
 	return MapData{DataRootDir: dRoot, Data: data, Description: Description, FilePath: filePath, Type: MDtype}
 }
 
-func NewMapData(MDtype, Description, filePath, dRoot, ID, JsonStr string) *Map {
+func NewMapData(MDtype, Description, filePath, dRoot, ID, JsonStr string) Map {
 	mdata := NewMap()
 	data := make(map[string]string)
 	data[ID] = JsonStr
