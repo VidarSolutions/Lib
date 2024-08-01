@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"time"
 
 	d "github.com/VidarSolutions/Lib/Dates"
 )
@@ -27,8 +26,8 @@ func (lvl LogLvl) String() string {
 }
 
 type LogEntry struct {
-	Message string    `json:"message"`
-	Date    time.Time `json:"date"`
+	Message string `json:"message"`
+	Date    string `json:"date"`
 	LogLvl  LogLvl
 }
 
