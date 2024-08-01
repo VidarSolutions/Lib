@@ -30,10 +30,12 @@ func (mData MapData) NewMap(key string) Map {
 	m.Set(key, mData)
 	return m
 }
-func NewMap() Map {
-	var mMap Map
 
-	return mMap
+// NewMap creates a new instance of Map
+func NewMap() Map {
+	return Map{
+		Data: make(map[string]MapData), // Initialize the map
+	}
 }
 
 func NewMD() MapData {
