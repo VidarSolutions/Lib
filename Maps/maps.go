@@ -59,12 +59,13 @@ func (m *Map) Set(key string, data MapData) error {
 	// Save data in the map
 	m.Data[key] = data
 	var dirPath, folder, filePath, appRootdir string
+	var err error
 	// Get the current working directory
 	if data.FilePath != "" {
 		if data.DataRootDir != "" {
 			appRootdir = data.DataRootDir
 		} else {
-			appRootdir, err := os.Getwd()
+			appRootdir, err = os.Getwd()
 			if err != nil {
 				return err
 			}
