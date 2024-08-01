@@ -28,7 +28,7 @@ func EnsureDir(dirName string) (l.LogEntry, error) {
 	return msg, nil
 }
 
-func WriteMApData(filePath string, data interface{}) error {
+func WriteMapData(filePath string, data interface{}) error {
 	// Convert data to JSON
 	jsonData, err := json.MarshalIndent(data, "", "  ")
 	if err != nil {
