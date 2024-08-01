@@ -34,20 +34,24 @@ func NewMap() *Map {
 	return make(map[string]MapData)
 }
 
-func NewMD() *MapData {
-	m = make(map[string]string)
-	m[ID] = JsonStr
-	dRoot := os.Getwd()
+func NewMD() MapData {
+
+	dRoot, _ := os.Getwd()
 	Description := "Blank MapData"
-	Mdtype := "MapData Replace with JsonStr to your Object or other Data Type"
-	filePath := MDtype
-	return md & MapData{DataRootDir: dRoot, Data: m, Description: Description, FilePath: filePath, Type: MDtype}
+	MDtype := "MapData Replace with JsonStr to your Object or other Data Type"
+	filePath := dRoot
+	data := make(map[string]string)
+	return MapData{DataRootDir: dRoot, Data: data, Description: Description, FilePath: filePath, Type: MDtype}
 }
 
-func NewMapData(MDtype, Description, filePath, droot, ID, JsonStr string) *Map {
-	m = make(map[string]string)
-	m[ID] = JsonStr
-	return md & MapData{DataRootDir: dRoot, Data: m, Description: Description, FilePath: filePath, Type: MDtype}
+func NewMapData(MDtype, Description, filePath, dRoot, ID, JsonStr string) *Map {
+	mdata := NewMap()
+	data := make(map[string]string)
+	data[ID] = JsonStr
+	md := MapData{DataRootDir: dRoot, Data: data, Description: Description, FilePath: filePath, Type: MDtype}
+	mdata.Set(MDtype, md)
+
+	return mdata
 }
 
 func (m *Map) Get(key string) (*MapData, bool) {

@@ -1,0 +1,6 @@
+github.com/VidarSolutions/Lib/Dates v0.0.0-20240801095146-b9d26089f447 h1:4hlOXnFZ4CtPjNmlsnsGOGgOWXquqKEOCMznqXa+IE8=
+github.com/VidarSolutions/Lib/Dates v0.0.0-20240801095146-b9d26089f447/go.mod h1:b3IXRpgWwc2JvwIxDLxc7Bw2vYousOsd4WbcxUh7fZ8=
+github.com/VidarSolutions/Lib/Files v0.0.0-20240801102357-8e59df6506ac h1:naQ8EA2VDmTl2jDVnwgzCD+/ViURJAehFTb17WqPp7A=
+github.com/VidarSolutions/Lib/Files v0.0.0-20240801102357-8e59df6506ac/go.mod h1:xYqzfLn0gRJ5ORVUQXGAZckwbVhXp8cMiBj0i+TdfII=
+github.com/VidarSolutions/Lib/Log v0.0.0-20240801102357-8e59df6506ac h1:hI7Ip2R8j2yEG/qRYMT33/l51LbHYth3zRAwt79wT8g=
+github.com/VidarSolutions/Lib/Log v0.0.0-20240801102357-8e59df6506ac/go.mod h1:VtEI4qETDel/UvOD+69PhHq8im76JPc+39AMNvLOCNQ=
