@@ -1,4 +1,8 @@
 github.com/VidarSolutions/Lib/Dates v0.0.0-20240801052516-cdaeb5d2047b h1:zWaL5C2TWdETMGz9l8Zh2tgYskYewB+FsEcAkZVMBMw=
 github.com/VidarSolutions/Lib/Dates v0.0.0-20240801052516-cdaeb5d2047b/go.mod h1:b3IXRpgWwc2JvwIxDLxc7Bw2vYousOsd4WbcxUh7fZ8=
+github.com/VidarSolutions/Lib/Dates v0.0.0-20240801061231-4d8c21c416d5 h1:+pnWCdOwk/2lXDYuUeA5qAS2I3mCWOcn8o1uXO5qHkg=
+github.com/VidarSolutions/Lib/Dates v0.0.0-20240801061231-4d8c21c416d5/go.mod h1:b3IXRpgWwc2JvwIxDLxc7Bw2vYousOsd4WbcxUh7fZ8=
 github.com/VidarSolutions/Lib/Log v0.0.0-20240801052516-cdaeb5d2047b h1:4MX+5OHAXZcdX0QwAkoCYYQ3HdzjAFYO9nUugDOaTUk=
 github.com/VidarSolutions/Lib/Log v0.0.0-20240801052516-cdaeb5d2047b/go.mod h1:VtEI4qETDel/UvOD+69PhHq8im76JPc+39AMNvLOCNQ=
+github.com/VidarSolutions/Lib/Log v0.0.0-20240801061231-4d8c21c416d5 h1:nf8kI3wq12pwX9liq8lZr98m5OhRWmKcfapH/SQNjLY=
+github.com/VidarSolutions/Lib/Log v0.0.0-20240801061231-4d8c21c416d5/go.mod h1:VtEI4qETDel/UvOD+69PhHq8im76JPc+39AMNvLOCNQ=
