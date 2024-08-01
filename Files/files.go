@@ -10,7 +10,7 @@ import (
 )
 
 func EnsureDir(dirName string) (l.LogEntry, error) {
-	currenDate = d.GetDate()
+	currentDate := d.GetDate()
 	mess := fmt.Sprintf("Check If Directory %s Exists \n", dirName)
 	msg := l.LogEntry{Message: mess, Date: currentDate, LogLvl: l.INFO}
 
