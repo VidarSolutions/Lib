@@ -23,20 +23,42 @@ type MapData struct {
 }
 
 type Map struct {
-	store map[string]MapData
+	Data map[string]MapData
+}
+func (mData MapData) NewMap(key string) *Map{
+	m := NewMap()
+	m.Set(key, mData)
+	return m
+}
+func NewMap() *Map {
+	return make(map[string]MapData)
 }
 
-func NewMap() *Map {
-	return &Map{store: make(map[string]MapData)}
+func NewMD() *Map{
+	m =make(map[string]string)
+	m[ID]=JsonStr
+	dRoot := os.Getwd()
+	Description :="Blank MapData"
+	Mdtype := "MapData Replace with JsonStr to your Object or other Data Type"
+	filePath	:= MDtype
+	return md &MapData{DataRootDir: dRoot, Data: m, Description: Description, FilePath: filePath, Type : MDtype}
 }
+
+
+func NewMapData(MDtype, Description, filePath, droot, ID, JsonStr string) *Map{
+	m =make(map[string]string)
+	m[ID]=JsonStr
+	return md &MapData{DataRootDir: dRoot, Data: m, Description: Description, FilePath: filePath, Type : MDtype}
+}
+
 func (m *Map) Get(key string) (*MapData, bool) {
-	data, found := m.store[key]
+	data, found := m.Data[key]
 	return &data, found
 }
 
 func (m *Map) Set(key string, data MapData) error {
 	// Save data in the map
-	m.store[key] = data
+	m.Data[key] = data
 	var dirPath, folder, filePath string
 	// Get the current working directory
 	if data.FilePath != "" {
