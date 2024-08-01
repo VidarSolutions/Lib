@@ -2,9 +2,8 @@ package Files
 
 import (
 	"encoding/json"
-	"log"
+	"fmt"
 	"os"
-	"reflect"
 
 	d "github.com/VidarSolutions/Lib/Dates"
 	l "github.com/VidarSolutions/Lib/Log"
@@ -12,18 +11,19 @@ import (
 
 func EnsureDir(dirName string) (l.LogEntry, error) {
 	currenDate = d.GetDate()
-	msg := 	t.LogEntry{Message: fmt.Sprintf("Check If Directory %s Exists \n", dirName), currentDate, l.DEBUG)
+	mess := fmt.Sprintf("Check If Directory %s Exists \n", dirName)
+	msg := l.LogEntry{Message: mess, Date: currentDate, LogLvl: l.INFO}
 
 	if _, err := os.Stat(dirName); os.IsNotExist(err) {
 
 		err := os.MkdirAll(dirName, 0755)
 		if err != nil {
-			msg.Message= fmt.Sprintf("Failed to create directory:%s %v \n", dirName, err)
+			msg.Message = fmt.Sprintf("Failed to create directory:%s %v \n", dirName, err)
 		} else {
-			msg.Message=Sprintf("Directory %s Did not Exist Creating Directory \n", dirName)
+			msg.Message = Sprintf("Directory %s Did not Exist Creating Directory \n", dirName)
 		}
 	} else {
-		msg.Message=Sprintf("Directory %s Found \n", dirName)
+		msg.Message = Sprintf("Directory %s Found \n", dirName)
 	}
 	return msg, err
 }
