@@ -34,7 +34,7 @@ func NewMap() *Map {
 	return make(map[string]MapData)
 }
 
-func NewMD() *Map{
+func NewMD() *MapData{
 	m =make(map[string]string)
 	m[ID]=JsonStr
 	dRoot := os.Getwd()
