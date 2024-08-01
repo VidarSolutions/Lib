@@ -1,0 +1,10 @@
+github.com/VidarSolutions/Lib/Categories v0.0.0-20240801050812-63b805f156c2 h1:nlCsrNFzEOgaP+Qlcw/1l1NAJ6oIWnct8pHSLuwQOGU=
+github.com/VidarSolutions/Lib/Categories v0.0.0-20240801050812-63b805f156c2/go.mod h1:dP2jWybqVIwJ6b1J6g6159YIK7o2jvKVyPtn/oIsbXY=
+github.com/VidarSolutions/Lib/Countries v0.0.0-20240801050812-63b805f156c2 h1:fd/CCuivoXslkX+N2/u3SkjS4IXnx4+FluIik7m2QhY=
+github.com/VidarSolutions/Lib/Countries v0.0.0-20240801050812-63b805f156c2/go.mod h1:mZSqvG0CstHrbVF/QJ9vMinCUGXqFTpoUPji/6/IZLQ=
+github.com/VidarSolutions/Lib/Dates v0.0.0-20240801045921-746c4b249ea3 h1:vOummW/67wYeWqdcmb8+117yn/3Z7N4CPnRs+Bddd2c=
+github.com/VidarSolutions/Lib/Dates v0.0.0-20240801045921-746c4b249ea3/go.mod h1:b3IXRpgWwc2JvwIxDLxc7Bw2vYousOsd4WbcxUh7fZ8=
+github.com/VidarSolutions/Lib/Files v0.0.0-20240801050812-63b805f156c2 h1:q95VPqC68LbBLEndZpryn9npY5qQxJl4/Oigj1M5+V0=
+github.com/VidarSolutions/Lib/Files v0.0.0-20240801050812-63b805f156c2/go.mod h1:X8oFFbqAaFjw6hzZYU7ZzcqqWZtPoHgm8+EI8E5ITGI=
+github.com/VidarSolutions/Lib/Log v0.0.0-20240801050812-63b805f156c2 h1:dz10XhZbaNjbVn0PAgBRgOTo9G9tgDhCAgUztNmeYgs=
+github.com/VidarSolutions/Lib/Log v0.0.0-20240801050812-63b805f156c2/go.mod h1:VtEI4qETDel/UvOD+69PhHq8im76JPc+39AMNvLOCNQ=
