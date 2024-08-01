@@ -1,4 +1,4 @@
-module github.com/VidarSolutions/Lib/GoogleSucksWithTypos/Logs
+module Logs
 
 go 1.22.1
 
