@@ -1,13 +1,11 @@
 package Lib
 
 import (
-	country "Country"
-
 	cat "github.com/VidarSolutions/Lib/Categories"
 	country "github.com/VidarSolutions/Lib/Countries"
 	d "github.com/VidarSolutions/Lib/Dates"
 	f "github.com/VidarSolutions/Lib/Files"
-	l "github.com/VidarSolutions/Lib/Log/Log"
+	l "github.com/VidarSolutions/Lib/Log"
 )
 
 func main() {
