@@ -3,10 +3,10 @@ package Lib
 import (
 	country "Country"
 
-	d "github.com/VidarSoltuions/Lib/Dates"
-	f "github.com/VidarSoltuions/Lib/Files"
 	cat "github.com/VidarSolutions/Lib/Categories"
 	country "github.com/VidarSolutions/Lib/Countries"
+	d "github.com/VidarSolutions/Lib/Dates"
+	f "github.com/VidarSolutions/Lib/Files"
 	l "github.com/VidarSolutions/Lib/Logs"
 )
 
