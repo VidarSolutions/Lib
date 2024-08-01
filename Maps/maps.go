@@ -2,7 +2,7 @@ package maps
 
 import (
 	"encoding/json"
-	"io/ioutil"
+	"os"
 	"os"
 	"path/filepath"
 	"sync"

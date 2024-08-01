@@ -7,7 +7,7 @@ import (
 	"reflect"
 
 	d "github.com/VidarSolutions/Lib/Dates"
-	l "github.com/VidarSolutions/Lib/Logs"
+	l "github.com/VidarSolutions/Lib/Log"
 )
 
 func EnsureDir(dirName string) (l.LogEntry, error) {

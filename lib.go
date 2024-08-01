@@ -7,7 +7,7 @@ import (
 	country "github.com/VidarSolutions/Lib/Countries"
 	d "github.com/VidarSolutions/Lib/Dates"
 	f "github.com/VidarSolutions/Lib/Files"
-	l "github.com/VidarSolutions/Lib/GoogleSucksWithTypos/Logs"
+	l "github.com/VidarSolutions/Lib/Log/Log"
 )
 
 func main() {
