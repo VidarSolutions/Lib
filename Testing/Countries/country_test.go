@@ -3,7 +3,7 @@ package Countries_test
 import (
 	"fmt"
 
-	c "github.com/Vidarsolutions/Lib/Countries"
+	c "github.com/VidarSolutions/Lib/Countries"
 )
 
 func Country() {
