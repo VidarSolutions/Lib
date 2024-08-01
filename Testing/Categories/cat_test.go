@@ -2,17 +2,17 @@ package Categories_Test
 
 import (
 	"fmt"
-
+	c t "github.com/VidarSolutions/Lib/Categories"
 	t "github.com/VidarSolutions/Lib/Testing"
 )
 
 func TestCat() {
 	// Example usage
-	cat, err := NewCategory("DragonSites", "test")
+	cat, err := c.NewCategory("DragonSites", "test")
 	results(cat, err)
-	cat, err = NewCategory("DragonSites", "test")
+	cat, err = c.NewCategory("DragonSites", "test")
 	results(cat, err)
-	cat, err = NewCategory("DragonSites", "test")
+	cat, err = c.NewCategory("DragonSites", "test")
 	results(cat, err)
 
 }

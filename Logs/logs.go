@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	d "github.com/VidarSoltuions/Lib/Dates"
+	d "github.com/VidarSolutions/Lib/Dates"
 )
 
 // Define LogLvl type

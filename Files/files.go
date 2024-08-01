@@ -6,8 +6,8 @@ import (
 	"os"
 	"reflect"
 
-	d "github.com/VidarSoltuions/Lib/Dates"
-	l "github.com/VidarSoltuions/Lib/Logs"
+	d "github.com/VidarSolutions/Lib/Dates"
+	l "github.com/VidarSolutions/Lib/Logs"
 )
 
 func EnsureDir(dirName string) (l.LogEntry, error) {
