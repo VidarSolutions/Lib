@@ -10,7 +10,7 @@ import (
 )
 
 func EnsureDir(dirName string) (l.LogEntry, error) {
-	currentDate := d.GetDate()
+	currentDate := d.GetDate("DT")
 	mess := fmt.Sprintf("Check If Directory %s Exists \n", dirName)
 	msg := l.LogEntry{Message: mess, Date: currentDate, LogLvl: l.INFO}
 
@@ -20,12 +20,12 @@ func EnsureDir(dirName string) (l.LogEntry, error) {
 		if err != nil {
 			msg.Message = fmt.Sprintf("Failed to create directory:%s %v \n", dirName, err)
 		} else {
-			msg.Message = Sprintf("Directory %s Did not Exist Creating Directory \n", dirName)
+			msg.Message = fmt.Sprintf("Directory %s Did not Exist Creating Directory \n", dirName)
 		}
 	} else {
-		msg.Message = Sprintf("Directory %s Found \n", dirName)
+		msg.Message = fmt.Sprintf("Directory %s Found \n", dirName)
 	}
-	return msg, err
+	return msg, nil
 }
 
 func WriteMApData(filePath string, data interface{}) error {
@@ -40,4 +40,5 @@ func WriteMApData(filePath string, data interface{}) error {
 	if err != nil {
 		return err
 	}
+	return nil
 }

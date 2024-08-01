@@ -6,3 +6,5 @@ github.com/VidarSolutions/Lib/Log v0.0.0-20240801052516-cdaeb5d2047b h1:4MX+5OHA
 github.com/VidarSolutions/Lib/Log v0.0.0-20240801052516-cdaeb5d2047b/go.mod h1:VtEI4qETDel/UvOD+69PhHq8im76JPc+39AMNvLOCNQ=
 github.com/VidarSolutions/Lib/Log v0.0.0-20240801061231-4d8c21c416d5 h1:nf8kI3wq12pwX9liq8lZr98m5OhRWmKcfapH/SQNjLY=
 github.com/VidarSolutions/Lib/Log v0.0.0-20240801061231-4d8c21c416d5/go.mod h1:VtEI4qETDel/UvOD+69PhHq8im76JPc+39AMNvLOCNQ=
+github.com/VidarSolutions/Lib/Log v0.0.0-20240801094028-786d0e690a10 h1:YTszp6dwkK2g2I5b/0qJVeY6gWQmInMQ6rZhUQKFhF8=
+github.com/VidarSolutions/Lib/Log v0.0.0-20240801094028-786d0e690a10/go.mod h1:VtEI4qETDel/UvOD+69PhHq8im76JPc+39AMNvLOCNQ=
