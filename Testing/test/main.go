@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	cat "github.com/VidarSolutions/Lib/Categories"
 	country "github.com/VidarSolutions/Lib/Countries"
 	d "github.com/VidarSolutions/Lib/Dates"
 	f "github.com/VidarSolutions/Lib/Files"
 	l "github.com/VidarSolutions/Lib/Log"
+	m "github.com/VidarSolutions/Lib/Maps"
 )
 
 func main() {
@@ -22,10 +22,25 @@ func test() {
 	f.EnsureDir("logs")
 	currentDate := d.GetDate("yyymmdd")
 	AppLog, _ := l.GetLogger("logs/app.log")
-	md := NewMD()
+
+	fmt.Printf("Date : %s\n", currentDate)
+	AppLog.WriteString("Hello\n")
+	md := m.NewMD()
+	// Create a new Map and add the MapData to it
+
 	MyMap := md.NewMap("Test")
 
-	fmt.Printf("Area Code for Country % is %s", Country[12].Country,[12].Code)
-	fmt.Printf("My Map is blank Map Description is %s ", &MyMap["test".Description])
+	fmt.Printf("Area Code for Country %s is %s \n\n", Country[12].Country, Country[12].Code)
+	// Print each field of the MapData
+	for key, data := range MyMap.Data {
+		fmt.Printf("Key: %s\n", key)
+		fmt.Printf("DataRootDir: %s\n", data.DataRootDir)
+		fmt.Printf("Description: %s\n", data.Description)
+		fmt.Printf("FilePath: %s\n", data.FilePath)
+		fmt.Printf("Type: %s\n", data.Type)
+		for k, v := range data.Data {
+			fmt.Printf("Data[%s]: %s\n", k, v)
+		}
+	}
 
 }
